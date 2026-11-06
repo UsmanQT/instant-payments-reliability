@@ -1,0 +1,16 @@
+Instant Payments Reliability
+Copyright 2026 Usman Tahir Qureshi
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE),
+except for the third-party components listed below.
+
+-------------------------------------------------------------------------------
+lab/baseline/
+
+  rocket-rides-atomic
+  https://github.com/brandur/rocket-rides-atomic
+  Snapshot of upstream commit 94b370ddbdc8d08fb263f07c221bab42190d48e6
+  Copyright (c) 2018- Brandur (https://brandur.org)
+  Licensed under the MIT License. See lab/baseline/LICENSE.
+
+  Modifications made in this repository are listed in lab/baseline/UPSTREAM.md.

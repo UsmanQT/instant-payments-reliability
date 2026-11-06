@@ -1,0 +1,38 @@
+name: Experiment
+description: A reproducible experiment with a hypothesis written before running
+labels: ["type:experiment"]
+body:
+  - type: input
+    id: id
+    attributes:
+      label: Experiment ID
+      placeholder: E02
+    validations: { required: true }
+  - type: dropdown
+    id: target
+    attributes:
+      label: Target system
+      options: ["baseline", "payments-lab", "both"]
+    validations: { required: true }
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis
+      description: Stated so that a result could prove it wrong.
+    validations: { required: true }
+  - type: textarea
+    id: setup
+    attributes:
+      label: Setup and faults
+      description: Configuration, faults injected (type, location, timing), load, seed.
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+      description: Written before running.
+    validations: { required: true }
+  - type: textarea
+    id: measure
+    attributes:
+      label: What is measured
+      description: Invariants checked and metrics collected.

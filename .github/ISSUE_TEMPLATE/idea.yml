@@ -1,0 +1,13 @@
+name: Idea
+description: Something worth exploring later; not yet planned
+labels: ["type:idea"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea
+    validations: { required: true }
+  - type: textarea
+    id: link
+    attributes:
+      label: Connection to the research themes

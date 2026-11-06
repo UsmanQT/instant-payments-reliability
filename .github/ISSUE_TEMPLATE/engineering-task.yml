@@ -1,0 +1,20 @@
+name: Engineering task
+description: Code, infrastructure or tooling work
+labels: ["type:engineering"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What
+    validations: { required: true }
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: Which research question or experiment this supports.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How to show it is done (tests, a passing CI run, a demo).
+    validations: { required: true }

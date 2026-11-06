@@ -1,0 +1,19 @@
+# Copy to incidents/YYYY-MM-DD-organization-short-name.yaml
+id: YYYY-MM-DD-organization-short-name
+organization: ""
+incident_start: ""          # ISO 8601 if known, otherwise "unknown"
+duration_minutes: unknown
+systems_affected: []        # e.g. [card payments, instant transfers]
+trigger: unknown            # see README for allowed values
+failing_layer: unknown
+failure_chain: []           # short ordered steps, in your own words
+detection: ""               # how it was noticed (alerting, customers, ...)
+recovery: ""                # how service was restored
+money_impact: unknown       # see README for allowed values
+reconciliation: ""          # how uncertain or duplicated payments were resolved, if stated
+lab_scenario: ""            # id of the experiment that reproduces this failure class, if any
+sources:
+  - url: ""
+    type: ""                # postmortem | status-page | regulator | provider-summary
+    accessed: ""            # YYYY-MM-DD
+analysis_notes: ""          # your interpretation; clearly separate from what the source says

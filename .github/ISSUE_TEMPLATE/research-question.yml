@@ -1,0 +1,30 @@
+name: Research question
+description: A question to investigate through reading, data or experiments
+labels: ["type:research"]
+body:
+  - type: dropdown
+    id: theme
+    attributes:
+      label: Theme
+      options: ["1 - Outage postmortems", "2 - Failure model", "3 - Exactly-once / ISO 20022", "4 - Money invariants"]
+    validations: { required: true }
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: One clear question.
+    validations: { required: true }
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters
+  - type: textarea
+    id: approach
+    attributes:
+      label: How to answer it
+      description: Reading, dataset analysis, an experiment, or a mix.
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: What output closes this issue (notes, a document section, an experiment)?
